@@ -7,23 +7,81 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">My Simple Page</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <h1>Welcome to My Simple Page</h1>
+        <p>A demonstration of HTML and CSS capabilities</p>
     </header>
+
     <main>
-        <section>
+        <section id="about">
             <h2>About</h2>
-            <p>This is a simple HTML page created for demonstration purposes.</p>
+            <p>This is a simple HTML page created for demonstration purposes. It showcases various HTML elements and CSS styling techniques.</p>
+            <p>The page has been designed to be responsive and user-friendly, with a clean and modern layout that emphasizes content readability and visual appeal.</p>
+            <p>Feel free to explore the different sections to see what this simple page has to offer!</p>
         </section>
-        <section>
+        
+        <section id="features">
             <h2>Features</h2>
             <ul>
                 <li>Simple and clean design</li>
                 <li>Responsive layout</li>
-                <li>Minimal content</li>
+                <li>Navigation menu</li>
+                <li>Image gallery</li>
+                <li>Contact form</li>
+                <li>Modern CSS styling</li>
             </ul>
         </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="placeholder-image">Image 1</div>
+                    <p>Beautiful landscape</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">Image 2</div>
+                    <p>Urban architecture</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">Image 3</div>
+                    <p>Natural wonders</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Simple Page. All rights reserved.</p>
     </footer>
